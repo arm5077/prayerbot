@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "authors": [
+    "Andrew McGill <arm5077@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "async": "^2.3.0",
+    "knuth-shuffle": "^1.0.1"
+  }
+}

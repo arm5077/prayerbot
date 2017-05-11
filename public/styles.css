@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+html, body {
+  height: 100%;
+  font-family: Inconsolata, monospace;
+}
+
+.content {
+  width: 300px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+}
+
+#box {
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  z-index: 2;
+}
+
+#box #bottom {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: calc(100% - 75px);
+  top: 74px;
+  z-index: 1;
+}
+
+#box #top, #box #top:after  {
+  width: 300px;
+  height: 37px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #666;
+}
+
+#box #top:after {
+  content: " ";
+  top: 37px;
+  z-index: 2;
+}
+
+#box #top #slit, #box #top #slit:after {
+  width: 200px;
+  height: 3px;
+  position: absolute;
+  left: 50px;
+  top: 33px;
+  background-color: #333;
+}
+
+#box #top #slit:after {
+  content: " ";
+  top: 3px;
+  left: 0;
+  z-index: 3;
+}
+
+#stream {
+  font-size: 14px;
+  position: absolute;
+  top: 35px;
+  left: 60px;
+  width: 180px;
+  background-color: #fafafa;
+  height: auto;
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  transition: top 1s ease-out;
+}
+
+#stream .line {
+  box-sizing: border-box;
+  padding: 0px 10px;
+  min-height: 15px;
+}
